@@ -71,9 +71,25 @@ a {
   min-width: 300px;
   border-radius: 20px;
 }
+.cardOut {
+  display: flex;
+  overflow: hidden;
+  min-width: 300px;
+  border-radius: 20px;
+  background-color: white;
+  margin-top: 1.5em;
+  justify-content: flex-start;
+  padding: 2em 5em 2em 2em;
+  justify-content: space-between;
+}
 .card .img-wrapper {
   overflow: hidden;
   max-height: 370px;
+}
+.cardOut .img-wrapper {
+  overflow: hidden;
+  max-height: 30em;
+  max-width: 40em;
 }
 .card .img-wrapper img {
   display: block;
@@ -82,10 +98,23 @@ a {
   width: 100%;
   object-fit: contain;
 }
+.cardOut .img-wrapper img {
+  display: block;
+  overflow: hidden;
+  height: 100%;
+  width: 30%;
+  object-fit: contain;
+  border-radius: 20px;
+}
 .card .content {
   padding: 20px;
   background-color: white;
 }
+.cardOut .content {
+  text-align: right;
+  margin-right: -3em;
+}
+
 .card .content button {
   width: 100%;
   padding: 15px 0;
@@ -95,12 +124,34 @@ a {
   border: none;
   border-radius: 10px;
 }
-
+.card .content button:hover {
+  background-color: green;
+}
 .card .content h2 {
   padding: 5px 0;
 }
-
+.cardOut .content h2 {
+  padding: 0px 0px;
+  color: rgb(41, 98, 24);
+  font-size: 2em;
+}
 .card .content .price {
   font-size: 1.5rem;
   padding-bottom: 20px;
+}
+.cardOut .content .price {
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
+
+.white {
+  color: white;
+}
+
+.total {
+  color: white;
+  padding: 20px 20px;
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: 800;
 }
